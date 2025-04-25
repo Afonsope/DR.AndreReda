@@ -1,0 +1,231 @@
+/* INPORT GOOGLE FONT - POPPINS */
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* VARIAVEIS */
+:root {
+    --cor-branco: #ffffff;
+    --cor-principal: #534937;
+    --cor-secundaria: #93805e;
+}
+
+/* NAVBAR */
+.marrom {
+    color: var(--cor-principal);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--cor-principal);
+    padding-right: 30px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--cor-secundaria);
+}
+
+.navbar-light .navbar-nav .btn, p a {
+    color: var(--cor-branco);
+    background-color: var(--cor-principal);
+    border-radius: 25px;
+}
+
+.navbar-light .navbar-nav .btn:hover, p a:hover {
+    color: var(--cor-branco); 
+    background-color: var(--cor-secundaria);
+}
+
+/* hOME */
+#home {
+    position: relative; /* Contêiner pai precisa ser relativo */
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/clinica.png);
+    background-size: cover;
+    padding: 15px 0px;
+}
+
+#home h2 {
+    margin-top: 35px;
+    margin-bottom: 5px;
+    color: var(--cor-principal);
+    padding-right: 30px;
+    text-shadow: 2px 4px 5px black; /* SOMBRA EM UM TEXTO */
+     /* 1-horizontal| 2-vertical| 3-nitidez| 4-espalha a sombra*/
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h1, p {
+    margin-top: 10px;
+    color: var(--cor-branco)
+}
+
+.btn-block {
+    border-radius: 25px;
+}
+
+
+#perfil {
+    width: 405px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.triangle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* Pontos do clip-path ajustados para a forma desejada */
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    
+    background: var(--cor-principal);
+    z-index: 1;
+}
+
+/* PROCEDIMENTOS */
+#procedimento h2 {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    color: var(--cor-principal);
+    padding-right: 30px;
+}
+
+.procedimento{
+    background-image: url(../img/copia.jpg);
+    background-repeat: no-repeat;
+    margin-top: 35px;
+    height: 300px;
+    height: 450px;
+}
+
+.procedimento h3, .procedimento p {
+    margin-left: 200px;
+}
+
+.infinito {
+    display: flex;
+    padding: 0px 35px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    transform: translateY(-150px); /* <--- Adicionado */
+}
+
+.wrapper {
+   max-width: 600px;
+   position: relative; 
+}
+
+.wrapper i {
+    z-index: 10; /* ou um valor maior se precisar */
+    top: 50%;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 46px;
+    /* background-color: var(--cor-secundaria); */
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.wrapper i:first-child {
+    left: -50px;
+}
+
+.wrapper i:last-child {
+    right: -50px;
+}
+
+.wrapper .carousel {
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.carousel {
+    perspective: 1200px;
+  }
+
+.carousel.dragging {
+    cursor: grabbing;
+    scroll-behavior: auto;
+}
+
+.carousel .dragging img {
+    pointer-events: none;
+}
+
+.carousel img {
+    height: 200px;
+    object-fit: cover;
+    margin-left: 14px;
+    width: calc(100% / 3);
+}
+
+.carousel img:first-child {
+    margin-left: 0px;
+}
+
+.caixa {
+    width: 300px;
+    height: 300px;
+    padding: 8px;
+    margin: 20px;
+    border-radius: 15px;
+    background: var(--cor-branco);
+    Box-shadow: 10px 10px rgba(0, 0, 0, 0.5); /* SOMBRA NA AREA */
+}
+
+@media screen and (max-width: 900px) {
+    .carousel img {
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .carousel img {
+        width: 100%;
+    }
+}
+
+/* RODAPE */
+footer {
+    background: #000;
+    padding: 20px 0px 20px 0px;
+    position: relative;
+}
+
+footer .navbar-nav a {
+    color: var(--cor-branco);
+    font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover {
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    float: right;
+    margin: 0px 3px;
+}
