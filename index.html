@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. André Reda</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <!-- NORMALIZE CSS -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+
+    <!-- JS Interno -->
+    <script src="script.js" defer></script>
+
+    <!-- CSS Interno -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+          <a href="index.html" class="navbar-brand"
+            ><img src="./img/logo.png" alt="Logo" width="142"
+          /></a>
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#nav-principal"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="nav-principal">
+            <ul class="navbar-nav ml-auto">
+              <li><a href="#" class="nav-link">Procedimentos</a></li>
+              <li><a href="#" class="nav-link">Sobre</a></li>
+              <li><a href="#" class="nav-link">Depoimentos</a></li>
+              <li><a href="#" class="nav-link">Contato</a></li>
+              <li><a href="#" class="btn">Agendar Avaliação</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home" class="">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 d-flex">
+            <div class="align-self-center">
+              <h2>Cirurgia Plástica</h2>
+              <h1>
+                Técnica e elegância para mulheres que querem se redescobrir
+              </h1>
+              <p>
+                Especialista em mommy makeover, lipo HD e prótese de mama com
+                recuperação rápida (R24R)
+              </p>
+
+              <p>
+                <a href="" class="btn btn-block">Agendar avaliação</a>
+              </p>
+            </div>
+          </div>
+          
+
+          <div class="col-md-7 d-none d-md-block triangle">
+            <img
+              src="./img/perfil.png"
+              alt="Mulher"
+              id="perfil"
+              class="mr-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="procedimento">
+      <div id="procedimento">
+        <div class="container">
+          <div class="row">
+            <h2>Os procedimentos mais buscados pelas nossas pacientes:</h2>
+            <div class="col-md-6 procedimento">
+              <h3 class="titulo-procedimento">Mommy Makeover</h3>
+              <p style="color: #000; font-size: 15px">
+                O mommy makeover é um conjunto de procedimentos estéticos
+                personalizados que restauram e melhoram a aparência do corpo
+                após a gravidez e a amamentação. Cada tratamento é adaptado às
+                necessidades individuais, ajudando a recuperar a forma desejada
+                e a autoestima da paciente.
+              </p>
+            </div>
+
+            <div class="col-md-6 infinito">
+              <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <div class="carousel">
+                  <img 
+                    src="img/mommy-makeover.webp" 
+                    alt="Procedimento 1" 
+                    draggable="false" class="caixa"
+                    onclick="atualizarProcedimento('Mommy Makeover', 'O mommy makeover é um conjunto de procedimentos estéticos personalizados que restauram e melhoram a aparência do corpo após a gravidez e a amamentação. Cada tratamento é adaptado às necessidades individuais, ajudando a recuperar a forma desejada e a autoestima da paciente.', './img/copia.jpg')"
+                  >
+                
+                  <img 
+                    src="img/lipo-lad_pb.webp" 
+                    alt="Procedimento 2"
+                    draggable="false" class="caixa" 
+                    onclick="atualizarProcedimento('Lipo Led', 'A Lipo LAD, ou lipoaspiração de alta definição, é uma técnica avançada de lipoaspiração que redefine e esculpe os contornos, criando uma aparência atlética e tonificada, ideal para quem quer mais definição corporal.', 'img/lipo-lad.webp')"
+                  >
+                  <img 
+                    src="img/protese_pb.webp" 
+                    alt="Procedimento 1" 
+                    draggable="false" class="caixa"
+                    onclick="atualizarProcedimento('Protese', 'A prótese de mama é um procedimento cirúrgico que envolve a inserção de implantes para aumentar o volume ou reconstruir a forma da mama, podendo ser feito com silicone ou solução salina.', 'img/protese.webp')"
+                  >
+                
+                  <img 
+                    src="img/men_pb.jpg" 
+                    alt="Procedimento 2"
+                    draggable="false" class="caixa"
+                    onclick="atualizarProcedimento('Rinoplastia', 'A rinoplastia melhora a estética e a função do nariz, equilibrando os traços faciais.', './img/men_capa.jpg')"
+                  >
+                </div>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="./img/logo.png" alt="Spotify" width="142" />
+          </div>
+
+          <div class="col-md-6">
+            <ul class="navbar-nav">
+              <li class="text-center">
+                <a href=""
+                  >R. Amadeu Segundo Cherubini, 390 - Vila Sao Manoel, São José
+                  do Rio Preto - SP, 15200-721</a
+                >
+              </li>
+              <br />
+              <li class="text-center">
+                <a href=""
+                  >&copy; Dr. André Reda – Todos os direitos reservados</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <ul>
+              <li>
+                <a
+                  href="https://pt-br.facebook.com/andrelpreda/"
+                  target="_blank"
+                  ><img src="./img/facebook.png" alt="facebook" class="w-50"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/drandrereda/" target="_blank"
+                  ><img src="./img/instagram.png" alt="instagram" class="w-50"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="./img/whatsapp.png" alt="whatsapp" class="w-50"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
