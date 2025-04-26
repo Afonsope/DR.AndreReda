@@ -1,3 +1,4 @@
+
 /* INPORT GOOGLE FONT - POPPINS */
 @import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600&display=swap');
 
@@ -6,6 +7,10 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h6 {
+    font-weight: bold;
 }
 
 /* VARIAVEIS */
@@ -102,108 +107,188 @@ h1, p {
     padding-right: 30px;
 }
 
-.procedimento{
-    background-image: url(../img/copia.jpg);
-    background-repeat: no-repeat;
-    margin-top: 35px;
-    height: 300px;
-    height: 450px;
-}
-
 .procedimento h3, .procedimento p {
     margin-left: 200px;
 }
 
-.infinito {
-    display: flex;
-    padding: 0px 35px;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    transform: translateY(-150px); /* <--- Adicionado */
+.text {
+    background: url(../img/bg-mamoplastia-de-aumento-fundo-branco.webp) no-repeat;
+    width: 100%;
+    height: 450px;
 }
 
-.wrapper {
-   max-width: 600px;
-   position: relative; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SOBRE */
+#sobre {
+    margin-top: 100px;
+    padding: 60px 0;
 }
 
-.wrapper i {
-    z-index: 10; /* ou um valor maior se precisar */
-    top: 50%;
-    height: 46px;
-    width: 46px;
-    cursor: pointer;
+#doutor {
+    color: var(--cor-principal);
+    font-size: 2.5rem;
+    letter-spacing: -0.5px;
+}
+
+#crm {
+    color: var(--cor-secundaria);
+    font-size: 1.1rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 6px;
+}
+
+#crm::after {
+    content: '';
     position: absolute;
-    font-size: 1.2rem;
-    text-align: center;
-    line-height: 46px;
-    /* background-color: var(--cor-secundaria); */
-    border-radius: 50%;
-    transform: translateY(-50%);
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: var(--cor-principal);
 }
 
-.wrapper i:first-child {
-    left: -50px;
+.foto-no-escritorio {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
 }
 
-.wrapper i:last-child {
-    right: -50px;
+.biografia {
+    background: var(--cor-principal);
+    color: #fff;
+    line-height: 1.7;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-.wrapper .carousel {
-    font-size: 0px;
-    cursor: pointer;
-    overflow: hidden;
-    white-space: nowrap;
-    scroll-behavior: smooth;
+.biografia p {
+    margin-bottom: 1.5rem;
 }
 
-.carousel {
-    perspective: 1200px;
+.biografia p:last-child {
+    margin-bottom: 0;
+}
+
+/* INSTITUICOES */
+.instituicoes {
+    margin-top: -50px;
   }
 
-.carousel.dragging {
-    cursor: grabbing;
-    scroll-behavior: auto;
-}
+  
+  .logos-parceiros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo-item {
+    flex: 0 1 160px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo-instituicao {
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+  }
+  
+  .logo-item:hover .logo-instituicao {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .logos-parceiros {
+      gap: 20px;
+    }
+    
+    .logo-item {
+      flex-basis: 120px;
+      padding: 10px;
+    }
+    
+    .titulo-instituicoes {
+      font-size: 1.2rem;
+    }
+  }
 
-.carousel .dragging img {
-    pointer-events: none;
-}
-
-.carousel img {
-    height: 200px;
-    object-fit: cover;
-    margin-left: 14px;
-    width: calc(100% / 3);
-}
-
-.carousel img:first-child {
-    margin-left: 0px;
-}
-
-.caixa {
-    width: 300px;
-    height: 300px;
-    padding: 8px;
-    margin: 20px;
-    border-radius: 15px;
-    background: var(--cor-branco);
-    Box-shadow: 10px 10px rgba(0, 0, 0, 0.5); /* SOMBRA NA AREA */
-}
-
-@media screen and (max-width: 900px) {
-    .carousel img {
-        width: calc(100% / 2);
+@media (max-width: 768px) {
+    #doutor {
+        font-size: 2rem;
+    }
+    
+    #crm {
+        font-size: 1rem;
+    }
+    
+    .biografia {
+        padding: 20px;
     }
 }
 
-@media screen and (max-width: 550px) {
-    .carousel img {
-        width: 100%;
+/* Ajuste específico para o logo da UNICAMP */
+.logos-parceiros .logo-item:first-child .logo-instituicao {
+    max-width: 65px; /* Tamanho reduzido */
+    width: 100%;
+  }
+  
+  /* Mantém o tamanho padrão para os outros */
+  .logos-parceiros .logo-item:not(:first-child) .logo-instituicao {
+    max-width: 100%; /* Mantém o tamanho original dos demais */
+  }
+  
+  /* Ajuste para mobile */
+  @media (max-width: 768px) {
+    .logos-parceiros .logo-item:first-child .logo-instituicao {
+      max-width: 60px;
     }
+  }
+
+/* FEEDBACK */
+#feedback h2 {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    color: var(--cor-principal);
+    padding-right: 30px;
 }
+
+.numero-animado {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+    margin: 20px 0;
+  }
+  
+  .numero-animado.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 /* RODAPE */
 footer {
