@@ -51,7 +51,7 @@
       </nav>
     </header>
 
-    <section id="home" class="">
+    <section id="home">
       <div class="container">
         <div class="row">
           <div class="col-md-5 d-flex">
@@ -87,57 +87,86 @@
     <section id="procedimento">
       <div id="procedimento">
         <div class="container">
-          <div class="row">
+          <div class="row text">
             <h2>Os procedimentos mais buscados pelas nossas pacientes:</h2>
-            <div class="col-md-6 procedimento">
-              <h3 class="titulo-procedimento">Mommy Makeover</h3>
-              <p style="color: #000; font-size: 15px">
-                O mommy makeover é um conjunto de procedimentos estéticos
-                personalizados que restauram e melhoram a aparência do corpo
-                após a gravidez e a amamentação. Cada tratamento é adaptado às
-                necessidades individuais, ajudando a recuperar a forma desejada
-                e a autoestima da paciente.
-              </p>
-            </div>
+              <div class="col-md-6 procedimento">
+                <h3 class="titulo-procedimento">Mommy Makeover</h3>
+                <p style="color: #000; font-size: 15px">
+                  O mommy makeover é um conjunto de procedimentos estéticos
+                  personalizados que restauram e melhoram a aparência do corpo
+                  após a gravidez e a amamentação. Cada tratamento é adaptado às
+                  necessidades individuais, ajudando a recuperar a forma desejada
+                  e a autoestima da paciente.
+                </p>
+              </div>
 
-            <div class="col-md-6 infinito">
-              <div class="wrapper">
-                <i id="left" class="fa-solid fa-angle-left"></i>
-                <div class="carousel">
-                  <img 
-                    src="img/mommy-makeover.webp" 
-                    alt="Procedimento 1" 
-                    draggable="false" class="caixa"
-                    onclick="atualizarProcedimento('Mommy Makeover', 'O mommy makeover é um conjunto de procedimentos estéticos personalizados que restauram e melhoram a aparência do corpo após a gravidez e a amamentação. Cada tratamento é adaptado às necessidades individuais, ajudando a recuperar a forma desejada e a autoestima da paciente.', './img/copia.jpg')"
-                  >
+              <div class="col-md-6">
                 
-                  <img 
-                    src="img/lipo-lad_pb.webp" 
-                    alt="Procedimento 2"
-                    draggable="false" class="caixa" 
-                    onclick="atualizarProcedimento('Lipo Led', 'A Lipo LAD, ou lipoaspiração de alta definição, é uma técnica avançada de lipoaspiração que redefine e esculpe os contornos, criando uma aparência atlética e tonificada, ideal para quem quer mais definição corporal.', 'img/lipo-lad.webp')"
-                  >
-                  <img 
-                    src="img/protese_pb.webp" 
-                    alt="Procedimento 1" 
-                    draggable="false" class="caixa"
-                    onclick="atualizarProcedimento('Protese', 'A prótese de mama é um procedimento cirúrgico que envolve a inserção de implantes para aumentar o volume ou reconstruir a forma da mama, podendo ser feito com silicone ou solução salina.', 'img/protese.webp')"
-                  >
-                
-                  <img 
-                    src="img/men_pb.jpg" 
-                    alt="Procedimento 2"
-                    draggable="false" class="caixa"
-                    onclick="atualizarProcedimento('Rinoplastia', 'A rinoplastia melhora a estética e a função do nariz, equilibrando os traços faciais.', './img/men_capa.jpg')"
-                  >
-                </div>
-                <i id="right" class="fa-solid fa-angle-right"></i>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section id="sobre">
+      <div class="container">
+          <div class="row align-items-center">
+              <!-- Coluna da Foto -->
+              <div class="col-md-4 mb-4 mb-md-0">
+                  <img src="./img/2.jpeg" alt="Dr. André Reda em seu consultório" 
+                       class="foto-no-escritorio rounded shadow">
+              </div>
+              
+              <!-- Coluna do Texto -->
+              <div class="col-md-8">
+                  <div class="bio-content">
+                      <h1 id="doutor" class="mb-3">DR. ANDRÉ REDA</h1>
+                      <p id="crm" class="text-muted mb-4">CRM: 102016-SP / RQE Nº: 37923</p>
+                      
+                      <div class="biografia p-4 rounded">
+                          <p class="">Dr. André Reda é médico formado pela Faculdade de Medicina de Catanduva – SP, onde também concluiu sua residência médica em Cirurgia Geral. É especialista na área com reconhecimento do Ministério da Educação (MEC), além de possuir sólida formação em Cirurgia Plástica pela renomada instituição SOBRAPAR – UNICAMP.
+                            <br>
+                            Com títulos conferidos pela Sociedade Brasileira de Cirurgia Plástica e pelo Conselho Federal de Medicina, Dr. André é Membro Especialista da SBCP e também integra importantes entidades médicas, como a Associação Médica Brasileira e a ISAPS (Sociedade Internacional de Cirurgia Plástica Estética), o que reforça seu compromisso com os mais altos padrões da medicina estética.
+                            <br>
+                            Atuando também como perito médico, Dr. André Reda alia experiência, conhecimento técnico e constante atualização científica para oferecer um atendimento ético, seguro e centrado no bem-estar de seus pacientes.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="instituicoes">
+    <div class="container">
+      
+      <div class="logos-parceiros">
+        <div class="logo-item">
+          <img src="./img/logo-unicamp.svg" alt="SOBRAPAR - UNICAMP" class="logo-instituicao">
+        </div>
+        <div class="logo-item">
+          <img src="./img/sbcp.png" alt="Sociedade Brasileira de Cirurgia Plástica" class="logo-instituicao">
+        </div>
+        <div class="logo-item">
+          <img src="./img/cfm.png" alt="Conselho Federal de Medicina" class="logo-instituicao">
+        </div>
+        <div class="logo-item">
+          <img src="./img/amb.png" alt="Associação Médica Brasileira" class="logo-instituicao">
+        </div>
+        <div class="logo-item">
+          <img src="./img/ISAPS.png" alt="ISAPS - Sociedade Internacional de Cirurgia Plástica Estética" class="logo-instituicao">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="feedback">
+    <div class="container">
+      <div class="row">
+        <h2>Mais de <span class="numero-animado" data-valor="5000">0</span> pacientes atendidos com foco em:</h2>
+      </div>
+    </div>
+  </section>
 
     <footer>
       <div class="container">
