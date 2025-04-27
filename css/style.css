@@ -1,4 +1,3 @@
-
 /* INPORT GOOGLE FONT - POPPINS */
 @import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600&display=swap');
 
@@ -9,7 +8,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-h1, h2, h6 {
+h1, h2, h5, h6 {
     font-weight: bold;
 }
 
@@ -18,6 +17,7 @@ h1, h2, h6 {
     --cor-branco: #ffffff;
     --cor-principal: #534937;
     --cor-secundaria: #93805e;
+    --cor-feedback: #534937;
 }
 
 /* NAVBAR */
@@ -75,7 +75,6 @@ h1, p {
 .btn-block {
     border-radius: 25px;
 }
-
 
 #perfil {
     width: 405px;
@@ -271,7 +270,7 @@ h1, p {
   }
 
 /* FEEDBACK */
-#feedback h2 {
+.qualidade h2 {
     margin-top: 50px;
     margin-bottom: 5px;
     color: var(--cor-principal);
@@ -289,6 +288,469 @@ h1, p {
     opacity: 1;
     transform: translateY(0);
   }
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;  
+}
+
+h5 {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    color: var(--cor-principal);
+    padding-right: 30px;
+}
+
+h5 img {
+    text-align: center;
+    width: 25px;
+    margin: 5px;
+}
+
+.qualidade p {
+    color: #000;
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+
+/* FEEDBACK */
+#feedback, #formulario {
+    background: var(--cor-secundaria);
+}
+
+.feedback h2, .formulario h2 {
+    margin-top: 30px;
+    color: var(--cor-feedback);
+}
+
+.opniao {
+    background: var(--cor-branco);
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+.avaliacao {
+    margin-top: 15px;
+}
+
+.logo-google {
+    width: 30px;
+}
+
+.opniao p {
+    color: #000;
+}
+
+.autor {
+    float: right;
+}
+
+/* FORMULARIO */
+input[type="radio"] {
+    accent-color: var(--cor-principal); /* Coloque a cor que quiser aqui */
+  }
+
+.form-campo {
+    margin-top: 50px;
+}
+
+.formulario .btn-block:hover {
+    background: #6d5835;
+}
+
+/* ENDERECO */
+.endereco img {
+    width: 800px
+}
+
+/* RODAPE */
+footer {
+    background: #000;
+    padding: 20px 0px 20px 0px;
+    position: relative;
+}
+
+footer .navbar-nav a {
+    color: var(--cor-branco);
+    font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover {
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    float: right;
+    margin: 0px 3px;
+}
+/* INPORT GOOGLE FONT - POPPINS */
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h5, h6 {
+    font-weight: bold;
+}
+
+/* VARIAVEIS */
+:root {
+    --cor-branco: #ffffff;
+    --cor-principal: #534937;
+    --cor-secundaria: #93805e;
+    --cor-feedback: #534937;
+}
+
+/* NAVBAR */
+.marrom {
+    color: var(--cor-principal);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--cor-principal);
+    padding-right: 30px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--cor-secundaria);
+}
+
+.navbar-light .navbar-nav .btn, p a {
+    color: var(--cor-branco);
+    background-color: var(--cor-principal);
+    border-radius: 25px;
+}
+
+.navbar-light .navbar-nav .btn:hover, p a:hover {
+    color: var(--cor-branco); 
+    background-color: var(--cor-secundaria);
+}
+
+/* hOME */
+#home {
+    position: relative; /* Contêiner pai precisa ser relativo */
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/clinica.png);
+    background-size: cover;
+    padding: 15px 0px;
+}
+
+#home h2 {
+    margin-top: 35px;
+    margin-bottom: 5px;
+    color: var(--cor-principal);
+    padding-right: 30px;
+    text-shadow: 2px 4px 5px black; /* SOMBRA EM UM TEXTO */
+     /* 1-horizontal| 2-vertical| 3-nitidez| 4-espalha a sombra*/
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h1, p {
+    margin-top: 10px;
+    color: var(--cor-branco)
+}
+
+.btn-block {
+    border-radius: 25px;
+}
+
+#perfil {
+    width: 405px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.triangle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* Pontos do clip-path ajustados para a forma desejada */
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    
+    background: var(--cor-principal);
+    z-index: 1;
+}
+
+/* PROCEDIMENTOS */
+#procedimento h2 {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    color: var(--cor-principal);
+    padding-right: 30px;
+}
+
+.procedimento h3, .procedimento p {
+    margin-left: 200px;
+}
+
+.text {
+    background: url(../img/bg-mamoplastia-de-aumento-fundo-branco.webp) no-repeat;
+    width: 100%;
+    height: 450px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SOBRE */
+#sobre {
+    margin-top: 100px;
+    padding: 60px 0;
+}
+
+#doutor {
+    color: var(--cor-principal);
+    font-size: 2.5rem;
+    letter-spacing: -0.5px;
+}
+
+#crm {
+    color: var(--cor-secundaria);
+    font-size: 1.1rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 6px;
+}
+
+#crm::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: var(--cor-principal);
+}
+
+.foto-no-escritorio {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+}
+
+.biografia {
+    background: var(--cor-principal);
+    color: #fff;
+    line-height: 1.7;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.biografia p {
+    margin-bottom: 1.5rem;
+}
+
+.biografia p:last-child {
+    margin-bottom: 0;
+}
+
+/* INSTITUICOES */
+.instituicoes {
+    margin-top: -50px;
+  }
+
+  
+  .logos-parceiros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo-item {
+    flex: 0 1 160px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo-instituicao {
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+  }
+  
+  .logo-item:hover .logo-instituicao {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .logos-parceiros {
+      gap: 20px;
+    }
+    
+    .logo-item {
+      flex-basis: 120px;
+      padding: 10px;
+    }
+    
+    .titulo-instituicoes {
+      font-size: 1.2rem;
+    }
+  }
+
+@media (max-width: 768px) {
+    #doutor {
+        font-size: 2rem;
+    }
+    
+    #crm {
+        font-size: 1rem;
+    }
+    
+    .biografia {
+        padding: 20px;
+    }
+}
+
+/* Ajuste específico para o logo da UNICAMP */
+.logos-parceiros .logo-item:first-child .logo-instituicao {
+    max-width: 65px; /* Tamanho reduzido */
+    width: 100%;
+  }
+  
+  /* Mantém o tamanho padrão para os outros */
+  .logos-parceiros .logo-item:not(:first-child) .logo-instituicao {
+    max-width: 100%; /* Mantém o tamanho original dos demais */
+  }
+  
+  /* Ajuste para mobile */
+  @media (max-width: 768px) {
+    .logos-parceiros .logo-item:first-child .logo-instituicao {
+      max-width: 60px;
+    }
+  }
+
+/* FEEDBACK */
+.qualidade h2 {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    color: var(--cor-principal);
+    padding-right: 30px;
+}
+
+.numero-animado {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+    margin: 20px 0;
+  }
+  
+  .numero-animado.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;  
+}
+
+h5 {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    color: var(--cor-principal);
+    padding-right: 30px;
+}
+
+h5 img {
+    text-align: center;
+    width: 25px;
+    margin: 5px;
+}
+
+.qualidade p {
+    color: #000;
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+
+/* FEEDBACK */
+#feedback, #formulario {
+    background: var(--cor-secundaria);
+}
+
+.feedback h2, .formulario h2 {
+    margin-top: 30px;
+    color: var(--cor-feedback);
+}
+
+.opniao {
+    background: var(--cor-branco);
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+.avaliacao {
+    margin-top: 15px;
+}
+
+.logo-google {
+    width: 30px;
+}
+
+.opniao p {
+    color: #000;
+}
+
+.autor {
+    float: right;
+}
+
+/* FORMULARIO */
+input[type="radio"] {
+    accent-color: var(--cor-principal); /* Coloque a cor que quiser aqui */
+  }
+
+.form-campo {
+    margin-top: 50px;
+}
+
+.formulario .btn-block:hover {
+    background: #6d5835;
+}
+
+/* ENDERECO */
+.endereco img {
+    width: 800px
+}
 
 /* RODAPE */
 footer {
