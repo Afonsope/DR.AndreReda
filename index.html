@@ -1,148 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dr. André Reda</title>
+<html lang="pt-BR">
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. André Reda - Cirurgia Plástica</title>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./img/icon.png">
 
-    <!-- NORMALIZE CSS -->
-    <link rel="stylesheet" href="./css/normalize.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <!-- JS Interno -->
-    <script src="script.js" defer></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <!-- CSS Interno -->
-    <link rel="stylesheet" href="./css/style.css" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container">
-          <a href="index.html" class="navbar-brand"
-            ><img src="./img/logo.png" alt="Logo" width="142"
-          /></a>
-          <button
-            class="navbar-toggler"
-            data-toggle="collapse"
-            data-target="#nav-principal"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="nav-principal">
-            <ul class="navbar-nav ml-auto">
-              <li><a href="#procedimento" class="nav-link">Procedimentos</a></li>
-              <li><a href="#sobre" class="nav-link">Sobre</a></li>
-              <li><a href="#qualidade" class="nav-link">Depoimentos</a></li>
-              <li><a href="#formulario" class="nav-link">Contato</a></li>
-              <li><a href="#" class="btn">Agendar Avaliação</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+  <!-- CSS Normalizado -->
+  <link rel="stylesheet" href="./css/normalize.css">
 
-    <section id="home">
+  <!-- CSS Principal -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- JS Principal -->
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container">
-        <div class="row">
-          <div class="col-md-5 d-flex">
-            <div class="align-self-center">
-              <h2>Cirurgia Plástica</h2>
-              <h1>
-                Técnica e elegância para mulheres que querem se redescobrir
-              </h1>
-              <p>
-                Especialista em mommy makeover, lipo HD e prótese de mama com
-                recuperação rápida (R24R)
-              </p>
-
-              <p>
-                <a href="" class="btn btn-block">Agendar avaliação</a>
-              </p>
-            </div>
-          </div>
-          
-
-          <div class="col-md-7 d-none d-md-block triangle">
-            <img
-              src="./img/perfil.png"
-              alt="Mulher"
-              id="perfil"
-              class="mr-auto"
-            />
-          </div>
+        <a href="index.html" class="navbar-brand"
+          ><img src="./img/logo.png" alt="Logo" width="142"
+        /></a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#nav-principal"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav-principal">
+          <ul class="navbar-nav ml-auto">
+            <li><a href="#procedimento" class="nav-link">Procedimentos</a></li>
+            <li><a href="#sobre" class="nav-link">Sobre</a></li>
+            <li><a href="#qualidade" class="nav-link">Depoimentos</a></li>
+            <li><a href="#formulario" class="nav-link">Contato</a></li>
+            <li><a href="#" class="btn">Agendar Avaliação</a></li>
+          </ul>
         </div>
       </div>
-    </section>
+    </nav>
+  </header>
 
-    <section id="procedimento">
-      <div id="procedimento">
-        <div class="container">
-          <div class="row text">
-            <h2>Os procedimentos mais buscados pelas nossas pacientes:</h2>
-              <div class="col-md-6 procedimento">
-                <h3 class="titulo-procedimento">Mommy Makeover</h3>
-                <p style="color: #000; font-size: 15px">
-                  O mommy makeover é um conjunto de procedimentos estéticos
-                  personalizados que restauram e melhoram a aparência do corpo
-                  após a gravidez e a amamentação. Cada tratamento é adaptado às
-                  necessidades individuais, ajudando a recuperar a forma desejada
-                  e a autoestima da paciente.
-                </p>
-              </div>
+  <!-- Seção Home -->
+  <section id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 d-flex">
+          <div class="align-self-center">
+            <h2>Cirurgia Plástica</h2>
+            <h1>
+              Técnica e elegância para mulheres que querem se redescobrir
+            </h1>
+            <p>
+              Especialista em mommy makeover, lipo HD e prótese de mama com
+              recuperação rápida (R24R)
+            </p>
 
-              <div class="col-md-6">
-                
-              </div>
-            </div>
+            <p>
+              <a href="" class="btn btn-block">Agendar avaliação</a>
+            </p>
           </div>
         </div>
-      </div>
-    </section>
+        
 
-    <section id="sobre">
-      <div class="container">
-          <div class="row align-items-center">
-              <!-- Coluna da Foto -->
-              <div class="col-md-4 mb-4 mb-md-0">
-                  <img src="./img/2.jpeg" alt="Dr. André Reda em seu consultório" 
-                       class="foto-no-escritorio rounded shadow">
-              </div>
-              
-              <!-- Coluna do Texto -->
-              <div class="col-md-8">
-                  <div class="bio-content">
-                      <h1 id="doutor" class="mb-3">DR. ANDRÉ REDA</h1>
-                      <p id="crm" class="text-muted mb-4">CRM: 102016-SP / RQE Nº: 37923</p>
-                      
-                      <div class="biografia p-4 rounded">
-                          <p class="">Dr. André Reda é médico formado pela Faculdade de Medicina de Catanduva – SP, onde também concluiu sua residência médica em Cirurgia Geral. É especialista na área com reconhecimento do Ministério da Educação (MEC), além de possuir sólida formação em Cirurgia Plástica pela renomada instituição SOBRAPAR – UNICAMP.
-                            <br>
-                            Com títulos conferidos pela Sociedade Brasileira de Cirurgia Plástica e pelo Conselho Federal de Medicina, Dr. André é Membro Especialista da SBCP e também integra importantes entidades médicas, como a Associação Médica Brasileira e a ISAPS (Sociedade Internacional de Cirurgia Plástica Estética), o que reforça seu compromisso com os mais altos padrões da medicina estética.
-                            <br>
-                            Atuando também como perito médico, Dr. André Reda alia experiência, conhecimento técnico e constante atualização científica para oferecer um atendimento ético, seguro e centrado no bem-estar de seus pacientes.</p>
-                      </div>
+        <div class="col-md-7 d-none d-md-block triangle">
+          <img
+            src="./img/perfil.png"
+            alt="Mulher"
+            id="perfil"
+            class="mr-auto"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Procedimentos -->
+  <section id="procedimento">
+    <h2> Os procedimentos mais buscados pelas nossas pacientes:</h2>
+      <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="./img/bg-mommy-makeover-fundo-branco.webp" alt="">
+                <div class="content">
+                    <div class="title">Mommy Makeover</div>
+                    <div class="description">
+                      O mommy makeover é um conjunto de procedimentos estéticos personalizados que restauram e melhoram a aparência do corpo após a gravidez e a amamentação. Cada tratamento é adaptado às necessidades individuais, ajudando a recuperar a forma desejada e a autoestima da paciente.
+                    </div>
+                    <div class="button"> 
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./img/bg-lipolad-fundo-branco-esquerda.webp" alt="">
+                <div class="content">
+                    <div class="title">Lipo HD</div>
+                    <div class="description">
+                      A Lipo LAD, ou lipoaspiração de alta definição, é uma técnica avançada de lipoaspiração que redefine e esculpe os contornos, criando uma aparência atlética e tonificada, ideal para quem quer mais definição corporal.  
+                    </div>
+                    <div class="button">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./img/bg-mamoplastia-de-aumento-fundo-branco.webp" alt="">
+                <div class="content">
+                    <div class="title">Protese</div>
+                    <div class="description">
+                      Com a técnica R24R, procedimentos de prótese mamária e glútea oferecem resultados harmônicos e naturais, aliando beleza e uma recuperação rápida e confortável.  
+                    </div>
+                    <div class="button">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./img/bg-men.png" alt="">
+                <div class="content">
+                    <div class="title">Cirurgias masculinas</div>
+                    <div class="description">
+                      As cirurgias plásticas masculinas, como lipoaspiração, correção das orelhas e blefaroplastia, têm se popularizado com a técnica R24R, que garante recuperação rápida e resultados naturais.
+                    </div>
+                    <div class="button">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <div class="item">
+                <img src="./img/mommy-makeover.webp" alt="">
+            </div>
+            <div class="item">
+                <img src="./img/lipo-lad.webp" alt="">
+            </div>
+            <div class="item">
+                <img src="./img/protese.webp" alt="">
+            </div>
+            <div class="item">
+                <img src="./img/men.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="nextPrevArrows">
+            <button class="prev"> < </button>
+            <button class="next"> > </button>
+        </div>
+    </div>
+  </section>
+
+  <!-- Seção Sobre o Doutor -->
+  <section id="sobre">
+    <div class="container">
+      <div class="row align-items-center">
+          <!-- Coluna da Foto -->
+          <div class="col-md-4 mb-4 mb-md-0">
+              <img src="./img/2.jpeg" alt="Dr. André Reda em seu consultório" 
+                   class="foto-no-escritorio rounded shadow">
+          </div>
+          <!-- Coluna do Texto -->
+          <div class="col-md-8">
+              <div class="bio-content">
+                  <h1 id="doutor" class="mb-3">DR. ANDRÉ REDA</h1>
+                  <p id="crm" class="text-muted mb-4">CRM: 102016-SP / RQE Nº: 37923</p>
+                  <div class="biografia p-4 rounded">
+                      <p class="">Dr. André Reda é médico formado pela Faculdade de Medicina de Catanduva – SP, onde também concluiu sua residência médica em Cirurgia Geral. É especialista na área com reconhecimento do Ministério da Educação (MEC), além de possuir sólida formação em Cirurgia Plástica pela renomada instituição SOBRAPAR – UNICAMP.
+                        <br>
+                        Com títulos conferidos pela Sociedade Brasileira de Cirurgia Plástica e pelo Conselho Federal de Medicina, Dr. André é Membro Especialista da SBCP e também integra importantes entidades médicas, como a Associação Médica Brasileira e a ISAPS (Sociedade Internacional de Cirurgia Plástica Estética), o que reforça seu compromisso com os mais altos padrões da medicina estética.
+                        <br>
+                        Atuando também como perito médico, Dr. André Reda alia experiência, conhecimento técnico e constante atualização científica para oferecer um atendimento ético, seguro e centrado no bem-estar de seus pacientes.</p>
                   </div>
               </div>
           </div>
       </div>
+  </div>
   </section>
 
+  <!-- Instituições -->
   <section class="instituicoes">
     <div class="container">
-      
       <div class="logos-parceiros">
         <div class="logo-item">
           <img src="./img/logo-unicamp.svg" alt="SOBRAPAR - UNICAMP" class="logo-instituicao">
@@ -163,7 +214,8 @@
     </div>
   </section>
 
-  <section id="qualidade" class="qualidade">
+  <!-- Qualidade -->
+  <section id="qualidade">
     <div class="container">
       <div class="row">
         <h2>Mais de <span class="numero-animado" data-valor="5000">0</span> pacientes atendidos com foco em:</h2>
@@ -185,7 +237,8 @@
     </div>
   </section>
 
-  <section id="feedback" class="feedback">
+  <!-- Feedbacks -->
+  <section id="feedback">
     <div class="container">
       <div class="row">
         <h2>Feedbacks</h2>
@@ -231,16 +284,15 @@
       </div>
     </div>
   </section>
- 
-  <section id="formulario" class="formulario">
+
+  <!-- Formulário de Contato -->
+  <section id="formulario">
     <div class="container">
       <div class="row">
         <h2>Ficou interessada?</h2>
         <p>Esta página é para você que busca uma cirurgia segura, com resultados reais e acompanhamento profissional em todas as etapas. Se chegou a hora de se priorizar e transformar sua relação com o espelho, preencha o formulário abaixo e dê o primeiro passo.</p>
-
         <form class="container my-5">
           <div class="row">
-            
             <!-- Informações Pessoais -->
             <div class="col-md-6 mb-3">
               <h5><strong>Informações pessoais</strong></h5>
@@ -248,7 +300,6 @@
               <input type="tel" class="form-control my-2 form-campo" placeholder="Telefone" name="telefone" required>
               <input type="email" class="form-control my-2 form-campo" placeholder="E-mail" name="email" required>
             </div>
-            
             <!-- Interesse na Cirurgia -->
             <div class="col-md-6 mb-3">
               <h5><strong>Qual cirurgia tem interesse?</strong></h5>
@@ -268,7 +319,6 @@
                 <input class="form-check-input" type="radio" name="interesse" value="Outra" id="outra">
                 <label class="form-check-label" for="outra">Outra</label>
               </div>
-              
               <h5><strong>Já realizou alguma cirurgia estética?</strong></h5>
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="cirurgia_estetica" value="Sim" id="sim" required>
@@ -279,9 +329,7 @@
                 <label class="form-check-label" for="nao">Não</label>
               </div>
             </div>
-            
           </div>
-          
           <!-- Botão de envio -->
           <div class="text-center">
             <p>
@@ -289,76 +337,61 @@
             </p>
           </div>
         </form>
-
       </div>
     </div>
   </section>
 
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <img src="./img/logo.png" alt="Spotify" width="142" />
-          </div>
-
-          <div class="col-md-6">
-            <ul class="navbar-nav">
-              <li class="text-center">
-                <a href=""
-                  >R. Amadeu Segundo Cherubini, 390 - Vila Sao Manoel, São José
-                  do Rio Preto - SP, 15200-721</a
-                >
-              </li>
-              <br />
-              <li class="text-center">
-                <a href=""
-                  >&copy; Dr. André Reda – Todos os direitos reservados</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-md-3">
-            <ul>
-              <li>
-                <a
-                  href="https://pt-br.facebook.com/andrelpreda/"
-                  target="_blank"
-                  ><img src="./img/facebook.png" alt="facebook" class="w-50"
-                /></a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/drandrereda/" target="_blank"
-                  ><img src="./img/instagram.png" alt="instagram" class="w-50"
-                /></a>
-              </li>
-              <li>
-                <a href=""
-                  ><img src="./img/whatsapp.png" alt="whatsapp" class="w-50"
-                /></a>
-              </li>
-            </ul>
-          </div>
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="./img/logo.png" alt="Spotify" width="142" />
+        </div>
+        <div class="col-md-6">
+          <ul class="navbar-nav">
+            <li class="text-center">
+              <a href=""
+                >R. Amadeu Segundo Cherubini, 390 - Vila Sao Manoel, São José
+                do Rio Preto - SP, 15200-721</a
+              >
+            </li>
+            <br />
+            <li class="text-center">
+              <a href=""
+                >&copy; Dr. André Reda – Todos os direitos reservados</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul>
+            <li>
+              <a
+                href="https://pt-br.facebook.com/andrelpreda/"
+                target="_blank"
+                ><img src="./img/facebook.png" alt="facebook" class="w-50"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/drandrereda/" target="_blank"
+                ><img src="./img/instagram.png" alt="instagram" class="w-50"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="./img/whatsapp.png" alt="whatsapp" class="w-50"
+              /></a>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- JavaScript (Opcional) -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- jQuery e Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
 </html>
