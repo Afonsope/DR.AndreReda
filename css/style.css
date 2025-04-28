@@ -624,12 +624,7 @@ input[type="radio"] {
 .formulario .btn-block:hover {
     background: #6d5835;
 }
-
-/* ENDERECO */
-.endereco img {
-    width: 800px
-}
-
+
 /* RODAPE */
 footer {
     background: #000;
