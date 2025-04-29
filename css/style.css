@@ -100,42 +100,44 @@ h1, p {
 
 /* PROCEDIMENTOS */
 #procedimento h2 {
-    margin: 50px 0 25px 50px;
+    margin: 50px 0 25px 20px;
     color: var(--cor-principal);
-    padding-right: 30px;
 }
 
 .procedimento h3, .procedimento p {
-    margin-left: 200px;
+    margin-left: 20px;
 }
 
 /* slider section  */
-
-.slider{
+.slider {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     position: relative;
 }
-.slider .list .item{
+
+.slider .list .item {
     width: 100%;
     height: 100%;
     position: absolute;
     inset: 0 0 0 0;
 }
-.slider .list .item img{
+
+.slider .list .item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
+
 .slider .list .item .content{
     position: absolute;
     top: 20%;
-    width: 1140px;
-    max-width: 80%;
+    width: 100%;
+    max-width: 1140px;
     left: 50%;
     transform: translateX(-50%);
-    padding-right: 30%;
+    padding: 0 20px;
     box-sizing: border-box;
     color: var(--cor-principal);
     text-shadow: 0 5px 10px #0004;
@@ -185,25 +187,27 @@ h1, p {
 
 
 
-/* Thumbnail Section  */
-.thumbnail{
+/* Thumbnail Section */
+.thumbnail {
     position: absolute;
     bottom: 50px;
-    left: 50%;
+    right: 20px;
     width: max-content;
     z-index: 100;
     display: flex;
+    flex-direction: row;
     gap: 20px;
+    padding: 0 20px;
 }
 
-.thumbnail .item{
+.thumbnail .item {
     width: 150px;
     height: 220px;
     flex-shrink: 0;
     position: relative;
 }
 
-.thumbnail .item img{
+.thumbnail .item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -363,7 +367,7 @@ h1, p {
 
 
 .slider.prev .list .item:nth-child(2) .content .title,
-.slider.prev .list .item:nth-child(2) .content .type,
+.slider .prev .list .item:nth-child(2) .content .type,
 .slider.prev .list .item:nth-child(2) .content .description,
 .slider.prev .list .item:nth-child(2) .content .buttons
 {
@@ -404,13 +408,14 @@ h1, p {
 /* SOBRE */
 #sobre {
     margin-top: 100px;
-    padding: 60px 0;
+    padding: 60px 20px;
 }
 
 #doutor {
     color: var(--cor-principal);
     font-size: 2.5rem;
     letter-spacing: -0.5px;
+    margin-left: 20px;
 }
 
 #crm {
@@ -419,6 +424,7 @@ h1, p {
     position: relative;
     display: inline-block;
     padding-bottom: 6px;
+    margin-left: 20px;
 }
 
 #crm::after {
@@ -448,7 +454,7 @@ h1, p {
 }
 
 .biografia p {
-    margin-bottom: 1.5rem;
+    margin: 0 20px 1.5rem;
 }
 
 .biografia p:last-child {
@@ -541,10 +547,8 @@ h1, p {
 
 /* FEEDBACK */
 .qualidade h2 {
-    margin-top: 50px;
-    margin-bottom: 5px;
+    margin: 50px 0 5px 20px;
     color: var(--cor-principal);
-    padding-right: 30px;
 }
 
 .numero-animado {
@@ -579,24 +583,30 @@ h5 img {
 
 .qualidade p {
     color: #000;
-    margin-right: 30px;
-    margin-bottom: 50px;
+    margin: 0 30px 50px 20px;
 }
 
 /* FEEDBACK */
 #feedback, #formulario {
     background: var(--cor-secundaria);
+    padding: 0 20px;
 }
 
 .feedback h2, .formulario h2 {
-    margin-top: 30px;
+    margin: 30px 0 0 20px;
     color: var(--cor-feedback);
 }
 
 .opniao {
     background: var(--cor-branco);
-    margin-right: 10px;
+    margin: 0 10px 20px 20px;
     border-radius: 25px;
+    width: calc(100% - 30px);
+}
+
+.opniao p {
+    color: #000;
+    padding: 0 20px;
 }
 
 .avaliacao {
@@ -605,10 +615,6 @@ h5 img {
 
 .logo-google {
     max-width: 30px;
-}
-
-.opniao p {
-    color: #000;
 }
 
 .autor {
@@ -716,7 +722,7 @@ footer ul li {
     }
     
     .slider .list .item .content {
-        padding-right: 0;
+        padding: 0 15px;
     }
     
     .slider .list .item .content .title,
@@ -725,12 +731,7 @@ footer ul li {
     }
     
     .thumbnail {
-        bottom: 20px;
-    }
-    
-    .thumbnail .item {
-        width: 100px;
-        height: 150px;
+        display: none;
     }
     
     .nextPrevArrows {
@@ -740,8 +741,10 @@ footer ul li {
     
     /* Feedback and Qualidades Responsive */
     .opniao {
+        margin-left: 15px;
+        margin-right: 15px;
         margin-bottom: 20px;
-        width: 100%;
+        width: calc(100% - 30px);
     }
     
     .flex-container {
@@ -787,6 +790,51 @@ footer ul li {
         display: inline-block;
         margin: 0 5px;
     }
+    
+    #feedback, #formulario {
+        padding: 0 15px;
+    }
+    
+    .feedback h2, .formulario h2 {
+        margin-left: 15px;
+    }
+    
+    .qualidade h2 {
+        margin-left: 15px;
+    }
+    
+    .qualidade p {
+        margin-left: 15px;
+    }
+    
+    .opniao {
+        margin-left: 15px;
+        width: calc(100% - 25px);
+    }
+    
+    #procedimento h2 {
+        margin-left: 15px;
+    }
+    
+    .procedimento h3, .procedimento p {
+        margin-left: 15px;
+    }
+    
+    .feedback h2, .formulario h2 {
+        margin-left: 15px;
+    }
+    
+    .opniao {
+        margin-left: 15px;
+    }
+    
+    #doutor, #crm {
+        margin-left: 15px;
+    }
+    
+    .biografia p {
+        margin-left: 15px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -798,14 +846,17 @@ footer ul li {
         font-size: 32px;
     }
     
+    .slider .list .item .content {
+        padding: 0 10px;
+    }
+    
     .slider .list .item .content .title,
     .slider .list .item .content .type {
         font-size: 2.5em;
     }
     
-    .thumbnail .item {
-        width: 80px;
-        height: 120px;
+    .thumbnail {
+        display: none;
     }
     
     .nextPrevArrows {
@@ -845,6 +896,34 @@ footer ul li {
     footer ul {
         gap: 8px;
     }
+    
+    .opniao {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        width: calc(100% - 20px);
+    }
+    
+    #feedback, #formulario {
+        padding: 0 10px;
+    }
+    
+    .feedback h2, .formulario h2 {
+        margin-left: 10px;
+    }
+    
+    .qualidade h2 {
+        margin-left: 10px;
+    }
+    
+    .qualidade p {
+        margin-left: 10px;
+    }
+    
+    .opniao {
+        margin-left: 10px;
+        width: calc(100% - 20px);
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -861,9 +940,8 @@ footer ul li {
         font-size: 2em;
     }
     
-    .thumbnail .item {
-        width: 60px;
-        height: 90px;
+    .thumbnail {
+        display: none;
     }
     
     .nextPrevArrows {
@@ -881,5 +959,118 @@ footer ul li {
     
     footer ul li {
         margin: 0 3px;
+    }
+}
+
+/* Responsive adjustments for mobile */
+@media screen and (max-width: 768px) {
+    .slider {
+        height: 80vh;
+    }
+    
+    .slider .list .item img {
+        object-fit: contain;
+        background-color: #fff;
+    }
+    
+    .slider .list .item .content {
+        top: 20%;
+        right: 10px;
+        transform: none;
+        padding: 0 10px;
+        max-width: 50%;
+        margin-right: 60px;
+    }
+    
+    .slider .list .item .content .title,
+    .slider .list .item .content .type {
+        font-size: 2.5em;
+    }
+    
+    .slider .list .item .content .description {
+        font-size: 0.9em;
+    }
+    
+    #procedimento h2 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+    
+    .thumbnail {
+        display: none;
+    }
+    
+    .nextPrevArrows {
+        top: 85%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .slider {
+        height: 70vh;
+    }
+    
+    .slider .list .item .content {
+        top: 25%;
+        right: 8px;
+        max-width: 50%;
+        margin-right: 25px;
+    }
+    
+    .slider .list .item .content .title,
+    .slider .list .item .content .type {
+        font-size: 2em;
+    }
+    
+    .slider .list .item .content .description {
+        font-size: 0.85em;
+    }
+    
+    #procedimento h2 {
+        font-size: 1.5em;
+        margin-bottom: 0px;
+    }
+    
+    .thumbnail {
+        display: none;
+    }
+    
+    .nextPrevArrows {
+        top: 90%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .slider {
+        height: 60vh;
+    }
+    
+    .slider .list .item .content {
+        top: 30%;
+        right: 5px;
+        max-width: 70%;
+        margin-right: 25px;
+    }
+    
+    .slider .list .item .content .title,
+    .slider .list .item .content .type {
+        font-size: 1.5em;
+    }
+    
+    .slider .list .item .content .description {
+        font-size: 0.8em;
+    }
+    
+    #procedimento h2 {
+        font-size: 1.2em;
+        margin-bottom: 8px;
+    }
+    
+    .thumbnail {
+        display: none;
+    }
+    
+    .nextPrevArrows {
+        top: 95%;
     }
 }
