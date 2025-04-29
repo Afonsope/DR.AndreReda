@@ -1,4 +1,3 @@
-
 /* INPORT GOOGLE FONT - POPPINS */
 @import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600&display=swap');
 
@@ -605,7 +604,7 @@ h5 img {
 }
 
 .logo-google {
-    width: 30px;
+    max-width: 30px;
 }
 
 .opniao p {
@@ -624,17 +623,25 @@ input[type="radio"] {
 .formulario .btn-block:hover {
     background: #6d5835;
 }
-
 /* RODAPE */
 footer {
     background: #000;
     padding: 20px 0px 20px 0px;
     position: relative;
+    text-align: center;
+}
+
+footer .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 footer .navbar-nav a {
     color: var(--cor-branco);
     font-size: 0.8em;
+    text-align: center;
 }
 
 footer .navbar-nav a:hover {
@@ -643,9 +650,236 @@ footer .navbar-nav a:hover {
 
 footer ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
 footer ul li {
-    float: right;
     margin: 0px 3px;
-}
+    display: inline-block;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    #perfil {
+        width: 350px;
+    }
+    
+    .slider .list .item .content {
+        max-width: 90%;
+        padding-right: 20%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #perfil {
+        width: 300px;
+    }
+    
+    .slider .list .item .content {
+        padding-right: 10%;
+    }
+    
+    .slider .list .item .content .title,
+    .slider .list .item .content .type {
+        font-size: 4em;
+    }
+    
+    .thumbnail .item {
+        width: 120px;
+        height: 180px;
+    }
+    
+    footer .navbar-nav {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    footer .navbar-nav a {
+        padding: 0.5rem 1rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #perfil {
+        width: 250px;
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+    
+    .slider .list .item .content {
+        padding-right: 0;
+    }
+    
+    .slider .list .item .content .title,
+    .slider .list .item .content .type {
+        font-size: 3em;
+    }
+    
+    .thumbnail {
+        bottom: 20px;
+    }
+    
+    .thumbnail .item {
+        width: 100px;
+        height: 150px;
+    }
+    
+    .nextPrevArrows {
+        top: 70%;
+        right: 40%;
+    }
+    
+    /* Feedback and Qualidades Responsive */
+    .opniao {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .qualidade {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    
+    .logos-parceiros {
+        gap: 20px;
+    }
+    
+    .logo-item {
+        flex-basis: 120px;
+    }
+    
+    footer {
+        padding: 15px 0;
+        text-align: center;
+    }
+    
+    footer .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    footer ul {
+        justify-content: center;
+        padding: 0;
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    footer ul li {
+        float: none;
+        display: inline-block;
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #perfil {
+        width: 200px;
+    }
+    
+    h1 {
+        font-size: 32px;
+    }
+    
+    .slider .list .item .content .title,
+    .slider .list .item .content .type {
+        font-size: 2.5em;
+    }
+    
+    .thumbnail .item {
+        width: 80px;
+        height: 120px;
+    }
+    
+    .nextPrevArrows {
+        width: 200px;
+    }
+    
+    .nextPrevArrows button {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .endereco img {
+        width: 100%;
+    }
+    
+    .logos-parceiros {
+        gap: 15px;
+    }
+    
+    .logo-item {
+        flex-basis: 100px;
+    }
+    
+    footer {
+        padding: 10px 0;
+    }
+    
+    footer .navbar-nav {
+        gap: 8px;
+    }
+    
+    footer .navbar-nav a {
+        font-size: 0.9em;
+        padding: 0.3rem 0.5rem;
+    }
+    
+    footer ul {
+        gap: 8px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #perfil {
+        width: 150px;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    .slider .list .item .content .title,
+    .slider .list .item .content .type {
+        font-size: 2em;
+    }
+    
+    .thumbnail .item {
+        width: 60px;
+        height: 90px;
+    }
+    
+    .nextPrevArrows {
+        width: 150px;
+    }
+    
+    footer .navbar-nav a {
+        font-size: 0.8em;
+        padding: 0.2rem 0.4rem;
+    }
+    
+    footer ul {
+        gap: 5px;
+    }
+    
+    footer ul li {
+        margin: 0 3px;
+    }
+}
