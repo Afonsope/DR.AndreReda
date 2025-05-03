@@ -799,8 +799,16 @@ footer ul li {
     }
     
     .nextPrevArrows {
-        top: 70%;
-        right: 40%;
+        position: absolute;
+        left: 0;
+        bottom: 30px;
+        top: auto;
+        right: auto;
+        margin: 0 0 0 10px;
+        width: auto;
+        background: none;
+        box-shadow: none;
+        z-index: 101;
     }
     
     /* Feedback and Qualidades Responsive */
