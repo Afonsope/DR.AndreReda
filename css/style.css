@@ -164,7 +164,7 @@ h1, p {
     max-width: 100%;
     overflow-wrap: break-word;
     word-wrap: break-word;
-    text-align: left;
+    text-align: right;
     margin-left: auto;
     width: 60%;
 }
@@ -431,7 +431,6 @@ h1, p {
 
 /* SOBRE */
 #sobre {
-    margin-top: 100px;
     padding: 60px 20px;
 }
 
