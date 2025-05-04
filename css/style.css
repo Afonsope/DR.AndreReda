@@ -1615,3 +1615,38 @@ footer ul li {
         object-position: 80% center; /* Ajuste de foco da imagem */
     }
 }
+
+/* Ajuste geral para subir o conteúdo */
+.slider .list .item .content {
+    top: 5% !important; /* Reduzir de 10% para 5% */
+}
+
+/* Ajuste específico para desktop */
+@media (min-width: 992px) {
+    .slider .list .item .content {
+        top: 8% !important;
+        padding-right: 8% !important;
+    }
+    
+    .slider .list .item .content .title {
+        margin-bottom: 20px !important; /* Espaço entre título e texto */
+    }
+}
+
+/* Ajuste para tablets */
+@media (max-width: 991px) and (min-width: 768px) {
+    .slider .list .item .content {
+        top: 10% !important;
+    }
+}
+
+/* Ajuste para mobile */
+@media (max-width: 767px) {
+    .slider .list .item .content {
+        top: 15% !important; /* Reduzir de 25% para 15% */
+    }
+    
+    .slider .list .item .content .title {
+        margin-bottom: 10px !important;
+    }
+}
