@@ -1,4 +1,4 @@
-/* INPORT GOOGLE FONT - POPPINS */
+    /* INPORT GOOGLE FONT - POPPINS */
 @import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600&display=swap');
 
 * {
@@ -906,6 +906,14 @@ footer ul li {
     .biografia p {
         margin-left: 15px;
     }
+    
+    #procedimento h2 {
+        margin-bottom: 5px !important;
+    }
+    #procedimento .slider {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -1213,63 +1221,41 @@ footer ul li {
 
 /* Tablets médios (768px - 1024px) */
 @media (max-width: 1024px) {
-    #procedimento h2,
-    #qualidade h2,
-    #sobre h2,
-    #feedback h2,
-    #formulario h2 {
-        font-size: 2.1em;
-        margin: 40px 0 20px 20px;
+    .slider .thumbnail {
+        display: none !important;
     }
-    
     .slider {
-        height: 80vh;
+        display: block !important;
+        height: 50vw;
+        min-height: 220px;
+        max-height: 400px;
     }
-    
-    .slider .list .item .content {
-        padding-right: 15%;
+    .slider .list .item {
+        display: block !important;
+        height: 100%;
+        position: absolute;
+        inset: 0;
     }
-    
-    .thumbnail .item {
-        width: 130px;
-        height: 190px;
+    .slider .list .item img {
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        margin: 0 auto;
+        display: block;
+        background: #fff;
     }
 }
 
 /* Tablets pequenos (600px - 768px) */
 @media (max-width: 768px) {
-    #procedimento h2,
-    #qualidade h2,
-    #sobre h2,
-    #feedback h2,
-    #formulario h2 {
-        font-size: 1.9em;
-        margin: 35px 0 18px 20px;
-    }
-    
     .slider {
-        height: 75vh;
+        height: 45vw;
+        min-height: 150px;
+        max-height: 250px;
     }
-    
-    .slider .list .item .content {
-        padding-right: 10%;
-    }
-    
-    .thumbnail {
-        display: none;
-    }
-    
-    .nextPrevArrows {
-        top: 80%;
-    }
-    
-    #qualidade .flex-container {
-        flex-direction: column;
-    }
-    
-    #qualidade .col-sm-4 {
-        width: 100%;
-        margin-bottom: 25px;
+    .slider .list .item img {
+        max-height: 80%;
     }
 }
 
@@ -1335,6 +1321,10 @@ footer ul li {
     
     .opniao {
         margin: 0 5px 15px;
+    }
+    
+    .slider .list .item .content {
+        margin-top: -60px !important;
     }
 }
 
@@ -1414,5 +1404,214 @@ footer ul li {
     .opniao {
         margin: 0 5px 8px;
         padding: 8px;
+    }
+}
+
+/* Ajustes gerais para o conteúdo */
+.slider .list .item .content {
+    top: 5% !important; /* Reduz o espaçamento superior */
+    padding-right: 10px !important;
+}
+
+/* Ajustes específicos para a descrição */
+.slider .list .item .content .description {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    font-size: 14px !important;
+    padding-right: 10px !important;
+    overflow: hidden !important;
+    text-align: left !important; /* Alinhamento melhor para mobile */
+}
+
+/* Ajuste do título */
+.slider .list .item .content .title {
+    font-size: 1.8em !important;
+    line-height: 1.2 !important;
+    margin-bottom: 10px !important;
+}
+
+@media (max-width: 768px) {
+    .slider .list .item .content {
+        top: 15% !important;
+        right: 0 !important;
+        width: 90% !important;
+        padding: 0 15px !important;
+    }
+
+    .slider .list .item .content .title {
+        font-size: 1.5em !important;
+    }
+
+    .slider .list .item .content .description {
+        font-size: 12px !important;
+        line-height: 1.4 !important;
+        padding-right: 5px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider .list .item .content {
+        top: 10% !important;
+        padding: 0 10px !important;
+    }
+
+    .slider .list .item .content .title {
+        font-size: 1.2em !important;
+    }
+
+    .slider .list .item .content .description {
+        font-size: 11px !important;
+    }
+}
+
+/* Alinhamento geral do conteúdo */
+.slider .list .item .content {
+    text-align: right !important;
+    right: 0;
+    padding-right: 0;
+    margin-right: 20px;
+}
+
+/* Ajuste específico para mobile */
+@media (max-width: 768px) {
+    .slider .list .item .content {
+        width: 80% !important;
+        margin-left: auto !important;
+        padding-left: 0 !important;
+    }
+    
+    .slider .list .item .content .description {
+        margin-left: auto !important;
+        width: 90% !important;
+        text-align: right !important;
+    }
+}
+
+/* Ajuste para textos longos */
+.slider .list .item .content .description {
+    margin-left: auto;
+    padding-left: 20%;
+}
+
+/* Alinhamento geral para todas as telas */
+.slider .list .item .content {
+    text-align: right !important;
+    right: 0 !important;
+    left: auto !important;
+    padding-right: 5% !important;
+}
+
+.slider .list .item .content .title,
+.slider .list .item .content .type,
+.slider .list .item .content .description {
+    text-align: right !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+/* Ajuste de largura para manter proporção */
+.slider .list .item .content .description {
+    width: 70% !important;
+    margin-left: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Media Queries para manter alinhamento em todas as resoluções */
+@media (max-width: 1200px) {
+    .slider .list .item .content .description {
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .slider .list .item .content .description {
+        width: 85% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider .list .item .content {
+        padding-right: 8% !important;
+    }
+    
+    .slider .list .item .content .description {
+        width: 90% !important;
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .slider .list .item .content {
+        padding-right: 10% !important;
+    }
+    
+    .slider .list .item .content .description {
+        width: 100% !important;
+    }
+}
+
+/* Aumento APENAS para computador (telas grandes) */
+@media (min-width: 992px) {
+    .slider .list .item .content .title {
+        font-size: 5.5em !important; /* Aumento apenas em desktop */
+    }
+    
+    .slider .list .item .content .description {
+        font-size: 18px !important; /* Aumento apenas em desktop */
+    }
+}
+
+/* Tablet (768px - 992px) - Mantém tamanho original */
+@media (max-width: 991px) and (min-width: 768px) {
+    .slider .list .item .content .title {
+        font-size: 4em !important; /* Tamanho tablet original */
+    }
+    
+    .slider .list .item .content .description {
+        font-size: 15px !important; /* Tamanho tablet original */
+    }
+}
+
+/* Mobile (até 767px) - Mantém config existente */
+/* (Não precisa alterar, já está no seu CSS original) */
+
+/* Correção específica para títulos em mobile */
+@media (max-width: 767px) {
+    .slider .list .item .content .title {
+        font-size: 1.8rem !important;
+        line-height: 1.3;
+        margin: 0 15px 10px 0;
+        position: relative;
+        text-shadow: 0 2px 3px rgba(0,0,0,0.3);
+        transform: none !important;
+        opacity: 1 !important;
+        filter: none !important;
+    }
+
+    .slider .list .item .content {
+        top: 12% !important;
+        padding-right: 5% !important;
+    }
+
+    .slider .list .item img {
+        object-position: 70% center;
+    }
+}
+
+@media (max-width: 767px) {
+    .slider .list .item .content {
+        top: 25% !important; /* Aumentei de 12% para 25% */
+        transform: translateY(0) !important;
+        padding-right: 8% !important;
+    }
+
+    .slider .list .item .content .title {
+        margin-bottom: 15px !important; /* Espaço extra entre título e descrição */
+    }
+
+    .slider .list .item img {
+        object-position: 80% center; /* Ajuste de foco da imagem */
     }
 }
