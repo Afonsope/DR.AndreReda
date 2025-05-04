@@ -26,21 +26,31 @@ prevBtn.onclick = function() {
  * @param {string} direction - 'next' or 'prev' to determine slide direction
  */
 function moveSlider(direction) {
-    // Get all slider and thumbnail items
-    let sliderItems = sliderList.querySelectorAll('.item')
-    let thumbnailItems = document.querySelectorAll('.thumbnail .item')
-    
-    if(direction === 'next'){
-        // Move first item to the end for next slide
-        sliderList.appendChild(sliderItems[0])
-        thumbnail.appendChild(thumbnailItems[0])
-        slider.classList.add('next')
-    } else {
-        // Move last item to the beginning for previous slide
-        sliderList.prepend(sliderItems[sliderItems.length - 1])
-        thumbnail.prepend(thumbnailItems[thumbnailItems.length - 1])
-        slider.classList.add('prev')
-    }
+  const sliderItems = sliderList.querySelectorAll('.item');
+  const thumbnailItems = document.querySelectorAll('.thumbnail .item');
+  
+  // Remove classe active do item atual
+  const currentActive = slider.querySelector('.item.active');
+  if(currentActive) currentActive.classList.remove('active');
+  
+  if(direction === 'next'){
+      sliderList.appendChild(sliderItems[0]);
+      thumbnail.appendChild(thumbnailItems[0]);
+  } else {
+      sliderList.prepend(sliderItems[sliderItems.length - 1]);
+      thumbnail.prepend(thumbnailItems[thumbnailItems.length - 1]);
+  }
+  
+  // Adiciona classe active ao novo item após pequeno delay
+  setTimeout(() => {
+      const newActive = sliderList.querySelector('.item:first-child');
+      newActive.classList.add('active');
+  }, 50);
+}
+
+// Inicializa o primeiro item como ativo
+document.addEventListener('DOMContentLoaded', () => {
+  sliderList.querySelector('.item').classList.add('active');
 
     // Remove animation class after animation ends
     slider.addEventListener('animationend', function() {
@@ -50,7 +60,7 @@ function moveSlider(direction) {
             slider.classList.remove('prev')
         }
     }, {once: true}) // Remove the event listener after it's triggered once
-}
+});
 
 // Initialize number animation when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
