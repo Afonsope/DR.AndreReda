@@ -1615,3 +1615,29 @@ footer ul li {
         object-position: 80% center; /* Ajuste de foco da imagem */
     }
 }
+
+/* Ajuste final - Espaçamento mínimo entre itens */
+@media (max-width: 768px) {
+    #qualidade .flex-container {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 5px !important; /* Espaço vertical reduzido */
+        margin: -5px 0 !important; /* Compensa espaçamento residual */
+    }
+
+    #qualidade .col-sm-4 {
+        margin: 0 !important;
+        padding: 10px 0 !important; /* Remove padding lateral */
+        transform: scale(0.98); /* Opcional: efeito visual compacto */
+    }
+
+    #qualidade h5,
+    #qualidade p {
+        margin: 0 !important;
+        padding: 5px 15px !important; /* Controle preciso interno */
+    }
+
+    #qualidade h5 img {
+        margin-right: 5px !important;
+    }
+}
