@@ -1,4 +1,4 @@
-/* INPORT GOOGLE FONT - POPPINS */
+    /* INPORT GOOGLE FONT - POPPINS */
 @import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600&display=swap');
 
 * {
@@ -1639,5 +1639,58 @@ footer ul li {
 
     #qualidade h5 img {
         margin-right: 5px !important;
+    }
+}
+
+/* REMOVA A REGRA ATUAL DA UNICAMP */
+.logos-parceiros .logo-item:first-child .logo-instituicao {
+    /* Remova o max-width: 65px */
+}
+
+/* NOVOS AJUSTES */
+.logos-parceiros .logo-item {
+    flex: 0 1 160px; /* Tamanho base igual para todos */
+    padding: 15px;
+}
+
+.logo-instituicao {
+    max-width: 100% !important; /* Força proporção igual */
+    height: auto;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    object-fit: contain; /* Mantém proporção */
+}
+
+/* Ajuste específico para UNICAMP */
+.logos-parceiros .logo-item:first-child .logo-instituicao {
+    padding: 10px; /* Compensação visual */
+    max-height: 80px; /* Altura máxima controlada */
+}
+
+@media (max-width: 768px) {
+    .logos-parceiros {
+        gap: 20px;
+    }
+    
+    .logos-parceiros .logo-item {
+        flex-basis: 120px; /* Redução proporcional */
+        padding: 10px;
+    }
+
+    /* Ajuste fino para UNICAMP em mobile */
+    .logos-parceiros .logo-item:first-child .logo-instituicao {
+        max-height: 60px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logos-parceiros .logo-item {
+        flex-basis: 100px;
+    }
+    
+    .logos-parceiros .logo-item:first-child .logo-instituicao {
+        max-height: 50px;
     }
 }
