@@ -2032,3 +2032,30 @@ p, .description { font-size: 13px; }
     right: 5%;
     z-index: 2;
 }
+
+/* Correção para espaçamento em MacBooks */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px),
+       screen and (-webkit-min-device-pixel-ratio: 2) {
+  .slider .list .item .content .description {
+    line-height: 1.4 !important;
+    margin-top: -8px !important;
+    transform: translateZ(0); /* Aceleração de hardware para Safari */
+  }
+
+  /* Correção específica para Safari */
+  @supports (-webkit-hyphens:none) {
+    .slider .list .item .content .description {
+      line-height: 1.35 !important;
+      margin-top: -12px !important;
+    }
+  }
+}
+
+/* Reset de espaçamento para fontes San Francisco (iOS/Mac) */
+@supports (font: -apple-system-body) {
+  .slider .list .item .content .description {
+    letter-spacing: -0.2px;
+    word-spacing: -0.5px;
+    padding-top: 2px !important;
+  }
+}
