@@ -129,3 +129,25 @@ document.addEventListener('DOMContentLoaded', () => {
       observer.observe(numero);
     });
 });
+
+// Detecta Safari/MacOS e aplica correções
+if (navigator.vendor.indexOf('Apple') > -1 && 
+    !navigator.userAgent.match(/(Chrome|Edge)/i)) {
+  
+  document.documentElement.style.setProperty(
+    '--macos-line-height', 
+    '1.25 !important'
+  );
+  
+  const styles = `
+    .slider .list .item .content .description {
+      line-height: var(--macos-line-height);
+      word-spacing: -0.5px;
+      margin-top: -3px !important;
+    }
+  `;
+  
+  const styleSheet = document.createElement("style");
+  styleSheet.innerText = styles;
+  document.head.appendChild(styleSheet);
+}
