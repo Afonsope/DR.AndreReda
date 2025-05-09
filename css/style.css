@@ -55,9 +55,11 @@ h1, h2, h5, h6 {
 }
 
 #home h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
     margin-top: 35px;
     margin-bottom: 5px;
-    color: var(--cor-principal);
+    color: var(--cor-branco);
     padding-right: 30px;
     text-shadow: 2px 4px 5px black; /* SOMBRA EM UM TEXTO */
      /* 1-horizontal| 2-vertical| 3-nitidez| 4-espalha a sombra*/
@@ -106,6 +108,11 @@ h1, p {
 #formulario h2 {
     margin: 50px 0 25px 20px;
     font-size: 2.5em;
+    font-family: 'Raleway';
+}
+
+#procedimento h2 {
+    color: var(--cor-principal);
 }
 
 #procedimento p,
@@ -646,9 +653,10 @@ h5 img {
 }
 
 /* FEEDBACK */
-#feedback, #formulario {
+#feedback {
     background: var(--cor-secundaria);
     padding: 0 20px;
+    padding-bottom: 25px;
 }
 
 .feedback h2, .formulario h2 {
@@ -666,7 +674,7 @@ h5 img {
     box-sizing: border-box;
 }
 
-.opniao p {
+.opniao p, #formulario p {
     color: #000;
     padding: 0 10px;
     word-wrap: break-word;
@@ -686,6 +694,10 @@ h5 img {
 }
 
 /* FORMULARIO */
+#formulario {
+    background: var(--cor-branco);
+}
+
 input[type="radio"] {
     accent-color: var(--cor-principal); /* Coloque a cor que quiser aqui */
   }
@@ -693,6 +705,37 @@ input[type="radio"] {
 .formulario .btn:hover {
     background: #6e592e;
 }
+
+/* Aumento mínimo do botão */
+#formulario .btn:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2) !important;
+}
+
+#formulario .btn:hover img {
+    transform: scale(1.1) !important;
+}
+
+
+#formulario .btn {
+    border-radius: 50px;
+    padding: 0.95em 1.9em !important;  /* 5% maior que o original */
+    font-size: 1.03em !important;      /* 3% maior */
+    letter-spacing: 0.3px;             /* Melhora legibilidade */
+}
+
+#formulario .btn img {
+    width: 26px !important;  /* 4% maior que 25px original */
+    height: 26px !important;
+}
+
+/* Mobile - Ajuste proporcional */
+@media (max-width: 768px) {
+    #formulario .btn {
+        padding: 0.9em 1.6em !important;
+    }
+}
+
 /* RODAPE */
 footer {
     background: #000;
@@ -1782,7 +1825,6 @@ p, .description { font-size: 13px; }
 }
 
 /* Ajustes para o formulário */
-#formulario h2,
 #formulario p {
     /* Estilo base (desktop) */
     font-size: 18px;
@@ -1954,4 +1996,39 @@ p, .description { font-size: 13px; }
     max-width: 600px; /* Ajuste conforme necessidade */
     margin: 0 auto;
     overflow: visible;
+}
+
+/* home section */
+#home {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Nova altura */
+    min-height: 550px; /* Altura mínima para evitar compressão */
+    display: flex; /* Novo */
+    align-items: center; /* Centraliza verticalmente */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/clinica.png);
+    background-size: cover;
+    background-position: center;
+    padding: 15px 0;
+}
+
+/* Ajuste para conteúdo */
+#home .container {
+    height: 100%;
+}
+
+#home .row {
+    height: 100%;
+}
+
+/* Ajuste da imagem */
+#perfil {
+    width: 35vw;
+    max-width: 325px;
+    min-width: 155px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    z-index: 2;
 }
