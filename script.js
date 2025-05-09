@@ -129,8 +129,3 @@ document.addEventListener('DOMContentLoaded', () => {
       observer.observe(numero);
     });
 });
-
-  if (navigator.userAgent.indexOf('Safari') != -1 && 
-      navigator.userAgent.indexOf('Chrome') == -1) {
-    document.documentElement.style.fontFamily = 'system-ui, -apple-system';
-  }
