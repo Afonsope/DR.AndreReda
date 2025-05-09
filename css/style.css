@@ -2032,3 +2032,20 @@ p, .description { font-size: 13px; }
     right: 5%;
     z-index: 2;
 }
+
+/* Correção definitiva - Safari/MacOS */
+@supports (background: -webkit-named-image(i)) and (not (translate: none)) {
+  .slider .list .item .content .description {
+    line-height: 1.2 !important;
+    margin: -8px 0 -5px 0 !important;
+    padding: 0 !important;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: subpixel-antialiased;
+    transform: translateZ(0) scale(0.9999);
+  }
+
+  /* Correção específica para texto justificado */
+  .slider .list .item .content .description br {
+    display: none !important;
+  }
+}
