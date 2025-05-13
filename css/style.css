@@ -2033,19 +2033,75 @@ p, .description { font-size: 13px; }
     z-index: 2;
 }
 
-/* Correção definitiva - Safari/MacOS */
-@supports (background: -webkit-named-image(i)) and (not (translate: none)) {
-  .slider .list .item .content .description {
-    line-height: 1.2 !important;
-    margin: -8px 0 -5px 0 !important;
-    padding: 0 !important;
-    text-rendering: geometricPrecision;
-    -webkit-font-smoothing: subpixel-antialiased;
-    transform: translateZ(0) scale(0.9999);
-  }
+.procedimento-luxo {
+  background-color: var(--cor-branco);
+}
 
-  /* Correção específica para texto justificado */
-  .slider .list .item .content .description br {
-    display: none !important;
+.procedimento-luxo .section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #534937;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.procedimento-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.procedimento-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.procedimento-item .imagem {
+text-align: center;
+  flex: 1;
+  padding: 10px;
+}
+
+.procedimento-item .imagem img {
+  width: 48%;
+  border-radius: 8px;
+}
+
+.procedimento-item .descricao {
+  flex: 1;
+  max-width: 48%;
+  padding: 10px;
+  text-align: center;
+}
+
+.procedimento-item .descricao h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  color: #93805e;
+  margin-bottom: 15px;
+}
+
+.procedimento-item .descricao p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .procedimento-item {
+    flex-direction: column;
+  }
+  .procedimento-item.reverse {
+    flex-direction: column;
+  }
+  .procedimento-item .imagem,
+  .procedimento-item .descricao {
+    max-width: 100%;
+  }
+  .procedimento-luxo .section-title {
+    font-size: 2rem;
   }
 }
